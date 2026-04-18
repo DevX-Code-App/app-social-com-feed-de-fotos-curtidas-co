@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "SocialApp",
+    "slug": "template-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.devxcode.app-social-com-feed-de-fotos-curtidas-co-c41efac0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to the camera to take photos for posts.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select photos for posts.",
+        "NSMicrophoneUsageDescription": "This app needs access to the microphone for video posts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.devxcode.app-social-com-feed-de-fotos-curtidas-co-c41efac0",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-build-properties",
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to let you share them.",
+          "cameraPermission": "The app needs access to your camera to let you take photos."
+        }
+      ]
+    ]
+  }
+}
