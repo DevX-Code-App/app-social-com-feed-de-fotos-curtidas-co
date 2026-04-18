@@ -36,6 +36,7 @@ export type RootStackParamList = {
   MainTabs: undefined;
   Profile: { userId: string };
   Comments: { postId: string };
+  Camera: undefined;
   NewPost: undefined;
   EditProfile: undefined;
 };
